@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        function addMenmber(){
+            //1.입력필드에서 이름과 나이 꺼내기
+            const ifm1 = $("#name").val();
+            const ifm2 = $("#age").val();
+            //2.테이블에 새로운 회원 추가
+            // tr 태그 만들기
+           let add = `<tr><td>${ifm1}</td><td>${ifm2}</td></tr>`; //${} 변수로 처리 가능
+           // 테이블에 태그
+            $("table").append(add);
+
+
+        }
+    </script>
+   <style>
+    /*  테이블, 헤더셀, 데이터셀에 테두리 추가 */
+    table,th,td {
+      border: 1px solid ;
+      border-collapse: collapse; /*테두리 선 방식*/
+    }
+    th,td {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+    <H1>회원 등록하기</H1>
+    <div>
+    <input id="name" text="text" placeholder="이름 입력">
+    <input id="age" text="age" placeholder="나이 입력">
+    <button onclick="addMenmber()">새로운 회원 등록</button>
+    </div>
+    
+    <table>
+        <caption>회원목록</caption>
+        <tr> <!--tr태그로 제목과 데이터2개 생성-->
+            <th>이름</th> 
+            <th>나이</th>
+        </tr>
+        <tr>
+            <td>둘리</td> <!--td 데이터 셀-->
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>또치</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+</body>
+</html>
