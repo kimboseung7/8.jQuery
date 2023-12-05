@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/quiz/cal.js"></script>
+    <style>
+        .cal1{
+            text-align: left;
+            color: white;
+        }
+        .cal3>input{
+             width: 50px;
+             height: 50px;
+             border: 1px solid black;
+            
+        }
+        /* .cal3>input:hover{
+            background-color: gold;
+            font-weight: bold;
+
+        } */
+        .cal3>input:hover {
+        margin: 0px auto;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
+        }
+        body{
+            background: url(https://i.gifer.com/Cwgf.gif);
+            background-size: 100%;
+            image-rendering: ;
+        }
+        h3{
+        display: inline;
+        margin: 0px auto;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
+        }
+        .result{
+        display: inline;
+        margin: 0px auto;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cal1">
+        <h3 calss="h3">두수를 입력하고, 계산기능을 선택하세요!</h3>
+        <div class="cal2">
+            <label for="num1">숫자1</label>
+            <input type="text" id="num1" name="num1">
+            <br>
+            <label for="num2">숫자2</label>
+            <input type="text" id="num2" name="num2">
+        </div>
+        <br>
+        <div class="cal3">
+            <input type="submit" name="+" id="+" value="+">
+            <input type="submit" name="-" id="-" value="-">
+            <input type="submit" name="*" id="*" value="*">
+            <input type="submit" name="/" id="/" value="/">
+        </div>
+        <br>
+    <hr align="left"   color: transparent;>
+        <span>결과 = </span>
+        <span class="result">?</span>
+    </div>
+
+</body>
+</html>
